@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .op{
+            width: 50px;
+            height: 50px;
+            border-radius: 5%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;border: 5px solid black;margin-left:  auto;margin-right: auto;width: 400px;margin-top: 20px;">
+        <h1>CALCULATOR</h1>
+    <input type="number" placeholder="First Number" id="fno">
+    <input type="number" placeholder="Second Number" id="sno">
+
+    <h3 style="border-radius: 2%;border: 1px solid black;width: 327px; margin-left:  auto;margin-right: auto;text-align: left;padding-left: 10px;">Result : <span id="result"></span></h3>
+    <button class="op" id="add" onclick="add()">+</button>
+    <button class="op" id="subtract" onclick="subtract()">-</button>
+    <button class="op" id="multiply" onclick="multiply()">×</button>
+    <button class="op" id="divide" onclick="divide()">÷</button>
+</div>
+</body>
+    <script>
+        
+        function add(){
+            var f = (Number)(document.getElementById("fno").value);
+            var s = (Number)(document.getElementById("sno").value);
+            
+            document.getElementById("result").textContent=f+s;
+        }
+        function subtract(){
+            var f = (Number)(document.getElementById("fno").value);
+            var s = (Number)(document.getElementById("sno").value);
+            
+            document.getElementById("result").textContent=f-s;
+        }
+        function multiply(){
+            var f = (Number)(document.getElementById("fno").value);
+            var s = (Number)(document.getElementById("sno").value);
+            console.log(f*s);
+            document.getElementById("result").textContent=f*s;
+        }
+        function divide(){
+            var s = (Number)(document.getElementById("sno").value);
+            if(s==0){
+                document.getElementById("result").textContent="Division not possible";
+            }else{
+            var f = (Number)(document.getElementById("fno").value);
+            
+            
+            document.getElementById("result").textContent=f/s;
+        }}
+    </script>
+</html>

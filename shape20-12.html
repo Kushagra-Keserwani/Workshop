@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #shape{
+            width:500px;height:250px;background-color:red;margin-top:100px;margin-bottom:100px;margin-left:auto;margin-right:auto;border: 5px solid black;
+        }
+    </style>
+</head>
+<body style="background-color: #e6e6e6;">
+    <div style="text-align: center;">
+        <h1 style="margin-bottom: 50px;">Choose Your Shape!</h1>
+    <button id="rectangle" style="background-color:red; width: 160px;height: 80px;position: relative; right: 100px;" onclick="rectangle()">Rectangle</button>
+    <button id="square" style="background-color:yellow; width: 100px;height: 100px; " onclick="square()">Square</button>
+    <button id="circle" style="background-color:green; width: 100px;height: 100px;border-radius:50%;position: relative;left: 100px;" onclick="circle()">Circle</button>
+
+     <div id="shape"></div>
+    </div>
+    
+
+</body>
+<script>
+function rectangle(){
+    var r = document.getElementById('shape');
+    r.style['width']='500px';
+    r.style['border-radius']='0';
+    r.style['background-color']='red';
+
+}
+function square(){
+    var r = document.getElementById('shape');
+    r.style['width']='250px';
+    r.style['border-radius']='0';
+    r.style['background-color']='yellow';
+
+}
+function circle(){
+    var r = document.getElementById('shape');
+    r.style['width']='250px';
+    r.style['border-radius']='50%';
+    r.style['background-color']='green';
+
+}
+</script>
+</html>

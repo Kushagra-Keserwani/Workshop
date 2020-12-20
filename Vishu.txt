@@ -1,0 +1,14 @@
+Create a repository
+Copy git link of repository
+Go to git folder in Windows explorer
+Open git bash here
+Enter commands:
+git config --global user.name "<your_username>"
+git config --global user.email <your_email>
+git clone <link of repo>
+
+cd <directory of repo>
+git add .
+git status (to check)
+git commit -m "<message>"
+git push origin master	

@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html>
+      <head>
+            <style>
+           
+            </style>
+            
+      </head>
+      <body>
+            <input type="number" placeholder="roll no" id="fname">
+            <br>
+            <input type="text" placeholder="marks" id="marks">
+            <br>
+            <button onclick="add()">add</button>
+       <table border="5" id="tab">
+            
+           <tr>
+                 <td>roll no</td>
+                 <td>marks</td>
+                 <td>delete</td>
+            </tr>
+       </table>
+       <br>
+   
+         
+      </body>
+      <script>
+
+              var table=document.getElementById('tab');
+              var fname=document.getElementById('fname').value
+              var marks=document.getElementById('marks').value
+
+              for(var i=1;i<5;++i){
+      table.innerHTML+='<tr><td>'+i+'</td><td>'+40+'</td>'+'<td><button id="'+i+'" onclick="del(this.id)">'+'delete'+'</button></td></tr>'   
+              
+            }
+
+          function add(){  
+                //int a=2;
+                //var a=2
+            
+ table.innerHTML+=" <tr><td>"+fname+"</td><td>"+marks+"</td></tr>"
+ //+= update
+ //= change
+            }
+            function del(a){
+
+               
+            }
+            
+           
+      </script>
+</html>
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <style> 
+ div {
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   animation: mymov 4s infinite;
+ }
+ 
+ @keyframes mymov {
+   0%   {margin-top: 0px;background-color: red;}
+   25%  {margin-top: 100px;background-color: green; width: 200px;
+   height: 200px; border: blue dashed 3px;}
+   50%  {margin-top: 200px;background-color: yellow; width: 300px;
+   height: 300px;border: orange dashed 3px;}
+   75%  {margin-top: 300px;background-color:orange; width: 200px;
+   height: 200px;border-radius: 50%;}
+   100% {margin-top: 400px;background-color: blue; width: 100px;
+   height: 100px;}
+ }
+ </style>
+ </head>
+ <body>
+ 
+ 
+ 
+ <div></div>
+ 
+ </body>
+ </html>

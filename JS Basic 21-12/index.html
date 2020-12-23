@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+		<h1>To-Do List </h1>
+		<input type="text" id="todo" placeholder="Add a New To-Do">
+        <button id="add" onclick="add()">Add</button>
+		<ul id="list">
+			<li> Wake up early</li>
+			<li>Do yoga</li>
+			<li>Take a bath</li>
+        </ul>
+        
+
+	</div>
+    
+</body>
+<script>
+    function add(){
+    var list = document.getElementById('list');
+    var todo = document.getElementById('todo');
+    list.innerHTML+="<li>" + todo +"</li>";
+    todo="";
+    }
+</script>
+</html>
